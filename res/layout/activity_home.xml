@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chess_background"
+    >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent" android:orientation="vertical">
+
+        <TextView
+            android:text="Chess By Mike"
+            android:id="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic|bold"
+            />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical"  android:gravity="center">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2">
+
+
+            <Button
+                android:text="Single Player"
+
+                android:onClick="startSinglePlayerChessActivity"
+                android:layout_gravity="left"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:layout_marginBottom="25dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+                <Button
+                    android:text="Multiplayer"
+                    android:onClick="startMultiPlayerChessActivity"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_shape"
+                     />
+
+                <TextView
+                    android:text="(pass n play)"
+                    android:id="@+id/textView"
+                    android:textSize="30sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic|bold"
+                    android:background="@android:color/background_light" />
+
+
+            </GridLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
